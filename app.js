@@ -4,24 +4,17 @@ console.log ("hello");
 
 var solution = Math.floor(Math.random()*4);
 
-var response = prompt ("choississez un chiffre entre 0 et 3");
 
 
-	//if (solution < response) 
-	//console.log ("vous êtes au dessus");
-	//else if (response < solution)
-	//	console.log ("vous ëtes au dessous")
-	//else 
-	//	console.log("félicitation vous avez trouver!");
+for ( var i = 0; i<3; i++) { 
 	
-
-for (solution = 0; solution != response; solution) {
-
-if (solution < response) {
-	console.log ("vous êtes au dessus");}
+	var response = prompt ("choose a number betwenn 0 and 3");		
+	
+	if (solution < response) {
+		console.log ("lower") ;}
 	else if (response < solution){
-		console.log ("vous ëtes au dessous");}
-	
-	else 
-		console.log("félicitation vous avez trouvé!");
-	
+		console.log ("higher");}
+	else {
+		console.log ("congratulation, you win!");break;
+	}
+}
